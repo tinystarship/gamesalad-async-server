@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table version="1.000000" name="tblTestData" numRows="3" numCols="3" flags="9" tableType="0">
+    <rows>
+        <row id="0" name=""/>
+        <row id="1" name=""/>
+        <row id="2" name=""/>
+    </rows>
+    <columns>
+        <column id="0" name="playerID" type="1" readonly="0">id1,id2,id3</column>
+        <column id="1" name="playerName" type="1" readonly="0">Jonathan,William,Axl</column>
+        <column id="2" name="playerStats" type="2" readonly="0">123,600,467</column>
+    </columns>
+</table>
