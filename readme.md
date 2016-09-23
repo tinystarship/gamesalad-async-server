@@ -24,15 +24,9 @@ Browse to http://localhost:8888/MAMP/ and click on the phpMyAdmin link in the to
 
 To start, click on the Databases tab. In the text box type in a tame and hit create. I’m using asyncTest.
 
-image
-
 After it’s created click on the database in the list below. This will allow you to create a table. You can create as many as you want, but for this test we only need one. Give it 3 columns and hit GO. I called mine testData.
 
-image
-
 Now we have to create the columns. the names should match what you have in GS for ease of use, but it doesn’t have to. The type needs to match exactly. I’m dealing with two columns of text and one integer. Hit save when you are complete
-
-image
 
 We are now done with the MySQL Configuration. Let’s move over to PHP.
 
@@ -46,8 +40,6 @@ I will be posting my test app in a separate post as well, but at this point we n
 At this point, the app should be fully functioning. Pretty simple huh? When you execute the script you must first click on the CONNECT button. This initializes the network features, but i hear in the future this will not be required. After that, hit the send button. When you see the send status turn green, your data has reached the server. At this point if you browse to the location of asyncText.php you will see a json.txt file. This is the output of the network call. You will need this later when you customize this for your data.
 
 If you want to insert some records into the table manually do it now. Click on the database name in the left column, then again on the table name. Click on the Insert tab and input some values and hit GO. Do this 2 or 3 times.
-
-image
 
 Now go back and hit GET in the app, you should see the next three values populate in the game.
 
@@ -72,8 +64,6 @@ On **line 124** we take the values and construct the JSON format for each row.
 After that we construct the JSON data and off it goes!
 
 Typing this up I noticed a bunch of places I could optimize, but this was quick and dirty, so it is what it is. First thing I would do is toss the DB and Table name into a variable at the top so if it changes you don’t have to scan through the code.
-
-image
 
 There is one scene with 9 actors:
 
