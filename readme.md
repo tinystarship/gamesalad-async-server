@@ -78,19 +78,32 @@ image
 There is one scene with 9 actors:
 
 Connect – calls the network connect behavior and initializes the network stuff.
+
 Send – sends the tblTestData contents to your server
+
 Get – downloads the data from your SQL Server inserts it into your tables. I still have not tested if this automatically saves the table or if we need an extra table save.
+
 Reset – resets the callback attributes
+
 tableSendStatus – displays the status of the send behavior
+
 tableReceiveStatus – displays the status of the receive behavior
+
 networkConnectStatus – displays the status of the connect behavior
+
 displayTableValue – displays a table value. The app currently displays the top 6 rows.
+
 tableCount – displays the total number of rows in the table
+
 
 There are a few attributes in use:
 
 sendTable – callback attribute for send table behavior
+
 sendURL – URL that the app will try and POST data to
+
 networkConnect – callback attribute for network connect behavior
+
 receiveTable – callback attribute for receive table behavior
+
 receiveURL – URL that the app will try to GET data from
