@@ -53,7 +53,7 @@ Now go back and hit GET in the app, you should see the next three values populat
 
 the .php file is attached at the bottom of this post. Let’s talk about the script below. First of all, I’m using Sublime Text 2 to edit it. It has a nice color scheme and makes it very easy to decipher what is going on. That is why I have the screenshot below. Second, in the script I’m using I was using gsText as the table/DB names.
 
-When you decide to branch off into custom tables and whatnot, there are a few sections you need to alter. First section is lines 62-68. This captures the contents of the array and then inserts it into SQL. The variables are just custom names, I find it easy to have them match the table names. The $arrayPieces[1] thing is directly referencing the value. 0 will always be the name of the row, 1 is column1, 2 is column2, etc.
+When you decide to branch off into custom tables and whatnot, there are a few sections you need to alter. First section is **lines 62-68**. This captures the contents of the array and then inserts it into SQL. The variables are just custom names, I find it easy to have them match the table names. The $arrayPieces[1] thing is directly referencing the value. 0 will always be the name of the row, 1 is column1, 2 is column2, etc.
 
 Next we construct the SQL Statement. It’s pretty basic SQL code, should be easy enough to figure out how to alter that.
 
@@ -63,11 +63,11 @@ RECEIVING data is another deal. This is where the JSON output from Step 6 above 
 
 First we need to query the database and get the values into an array. (Lines 96-104). Starting at line 113 we are looping through the array and constructing the proper JSON format. This is a place you will need to be careful about when altering for your data. It’s pretty simple, but one mistake and formatting and nothing will work.
 
-On line 124 we take the values and construct the JSON format for each row.
+On **line 124** we take the values and construct the JSON format for each row.
 
-Line 136 is an important one. This contains all the JSON text that comes before your data. You can do a copy and paste from the JSON output in step 6 above, but be sure to keep the .$arrlength. section, that makes sure the JSON reflects the right number of rows.
+**Line 136** is an important one. This contains all the JSON text that comes before your data. You can do a copy and paste from the JSON output in step 6 above, but be sure to keep the .$arrlength. section, that makes sure the JSON reflects the right number of rows.
 
-Line 139 is the footer information, I don’t think this changes, but check anyways.
+**Line 139** is the footer information, I don’t think this changes, but check anyways.
 
 After that we construct the JSON data and off it goes!
 
